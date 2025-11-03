@@ -1,0 +1,205 @@
+.my-reviews-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffeaa7 0%, #ffc7ed 100%);
+}
+
+.reviews-content {
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.no-reviews {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.2rem;
+  color: #636e72;
+  background: white;
+  border-radius: 12px;
+}
+
+.review-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+  font-size: 1.4rem;
+  color: #6c5ce7;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  margin: 10px 0;
+  color: #636e72;
+}
+
+.review-card p strong {
+  color: #2d3436;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.7;
+  margin: 15px 0 !important;
+  color: #2d3436 !important;
+}
+
+.review-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.view-book-btn,
+.delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-book-btn {
+  background: #6c5ce7;
+  color: white;
+}
+
+.view-book-btn:hover {
+  background: #5b4bc4;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 450px;
+  position: relative;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #636e72;
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  color: #2d3436;
+  margin-bottom: 20px;
+}
+
+.book-modal-image {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 15px auto;
+}
+
+.modal-content p {
+  margin: 12px 0;
+  color: #636e72;
+}
+
+.confirm-modal p {
+  margin: 20px 0;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn-cancel,
+.btn-confirm {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-cancel {
+  background: #95a5a6;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background: #7f8c8d;
+}
+
+.btn-confirm {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .review-actions {
+    flex-direction: column;
+  }
+}

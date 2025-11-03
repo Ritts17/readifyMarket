@@ -1,0 +1,135 @@
+.user-review-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.review-content {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+.review-form-wrapper {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #2d3436;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.book-title {
+  font-size: 1.3rem;
+  color: #6c5ce7;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.review-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.review-textarea:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+.rating-section {
+  margin-bottom: 30px;
+}
+
+.emoji-ratings {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.emoji-btn {
+  background: #f8f9fa;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-btn:hover {
+  background: #e9ecef;
+  transform: scale(1.1);
+}
+
+.emoji-btn.selected {
+  border-color: #6c5ce7;
+  background: #f0ebff;
+  transform: scale(1.15);
+}
+
+.emoji {
+  font-size: 2.5rem;
+}
+
+.submit-review-btn {
+  width: 100%;
+  padding: 14px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-review-btn:hover {
+  background: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+@media (max-width: 768px) {
+  .review-form-wrapper {
+    padding: 30px 25px;
+  }
+
+  .form-title {
+    font-size: 1.6rem;
+  }
+
+  .emoji-btn {
+    width: 60px;
+    height: 60px;
+  }
+
+  .emoji {
+    font-size: 2rem;
+  }
+}
